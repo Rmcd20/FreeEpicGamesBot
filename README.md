@@ -1,12 +1,22 @@
 <div align="center">
 	<h1>Epic Games Free Games</h1>
-  <a href="https://github.com/AuroPick/epic-free-games/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/AuroPick/epic-free-games"></a>
-  <a href="https://www.npmjs.com/package/epic-free-games"><img alt="npm" src="https://img.shields.io/npm/v/epic-free-games"></a>
-  <a href="https://www.npmjs.com/package/epic-free-games"><img alt="npm" src="https://img.shields.io/npm/dm/epic-free-games"></a>
+  <a href="https://github.com/AuroPick/epic-free-games/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/AuroPick/epic-free-games"></a>
+  <a href="https://www.npmjs.com/package/epic-free-games"><img alt="npm version" src="https://img.shields.io/npm/v/epic-free-games"></a>
+  <a href="https://www.npmjs.com/package/epic-free-games"><img alt="npm downloads" src="https://img.shields.io/npm/dm/epic-free-games"></a>
   </br>
   </br>
 	<p><b>Get Weekly Free Games Of Epic Games</b></p>
 </div>
+
+## Installation
+
+```bash
+npm i epic-free-games
+
+# OR
+
+yarn add epic-free-games
+
 
 ## Installation
 
@@ -18,9 +28,6 @@ npm i epic-free-games
 yarn add epic-free-games
 ```
 
-## Usage
-
-```js
 const { EpicFreeGames } = require('epic-free-games');
 
 // OR
@@ -30,6 +37,13 @@ import { EpicFreeGames } from 'epic-free-games';
 const epicFreeGames = new EpicFreeGames({ country: 'JP', locale: 'ja', includeAll: true })
 
 epicFreeGames.getGames().then(res => {
+  // Do something
+}).catch(err => {
+  // Do something
+});
+
+// you can override default options
+epicFreeGames.getGames({ country: 'DE', locale: 'de', includeAll: false }).then(res => {
   // Do something
 }).catch(err => {
   // Do something
@@ -149,11 +163,14 @@ epicFreeGames.getGames({ country: 'DE', locale: 'de', includeAll: false }).then(
     }
   ]
 }
+
 ```
 <hr/>
-
-> If you have any questions please do not hesitate to contact me.
+If you have any questions, please do not hesitate to contact me.
 
 <hr/>
+If you want to support me, you can give a star. That makes me happy.
 
-> If you want to support me, you can give a star. That makes me happy.
+<vbnet/>
+Feel free to further customize the content as needed. If you have any specific requests or questions, let me know!
+
